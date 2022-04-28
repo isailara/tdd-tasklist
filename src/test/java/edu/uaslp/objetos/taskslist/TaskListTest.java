@@ -1,15 +1,17 @@
 package edu.uaslp.objetos.taskslist;
 
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+import edu.uaslp.objetos.taskslist.exceptions.TaskNotFoundException;
+import edu.uaslp.objetos.taskslist.taskList.Task;
+import edu.uaslp.objetos.taskslist.taskList.TaskList;
 import org.junit.jupiter.api.Test;
 
-public class TaksListTest {
+public class TaskListTest {
 
     @Test
     public void givenANewTasksList_whenCreated_thenListIsEmpty() {
