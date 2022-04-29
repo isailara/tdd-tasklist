@@ -47,15 +47,15 @@ public class TaskList {
     }
 
     public void markAsDone(String Title){
-        Task task_aux=find(Title);
+        Task task=find(Title);
 
-        task_aux.isDone=true;
+        task.isDone=true;
     }
 
     public void markAsNotDone(String Title){
-        Task task_aux=find(Title);
+        Task task=find(Title);
 
-        task_aux.isDone=false;
+        task.isDone=false;
     }
 
     public Task getNextTask(){
